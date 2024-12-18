@@ -1,24 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Map</title>
+    <title>Mental Health and War in Uyraine </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css">
     <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
         }
-        iframe {
-            width: 100%;
-            height: 100vh;
-            border: none;
+
+        #map-container {
+            height: 80vh;
+            margin-top: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            margin-top: 40px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #343a40;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #6c757d;
         }
     </style>
 </head>
+
 <body>
-    <h1 style="text-align: center;">UKR Mental Health Interactive Map</h1>
-    <iframe src="UKR_MENTAL_HEALTH.html"></iframe>
-</body>
-</html>
+    <div class="container">
+        <header class="text-center">
+            <h1>Mental Health and War in Uyraine</h1>
+            <p><strong>Safiyeh Tayebi</strong> | safiyeh.tayebi@rutgers.edu</p>
+            <p>Course: Command Line GIS- PS9 </p>
+        </header>
+        <div id="map-container" class="mx-auto">
+            <!-- Embedded map -->
+            <iframe src="UKR_MENTAL_HEALTH.html" width="100%" height="100%" style="border: none;"></iframe>
+         </div>
